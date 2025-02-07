@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# ==============================================================================
+# Author: Ali Farooq
+# Description: The script that scans for active hosts on a network and performs port scan to look for open ports.
+# Dependencies: nmap
+# Version: 1.0
+# ==============================================================================
+
 # For IP address belonging to class C
 # Get the network address
 ip a | grep "3" | grep "inet" | head -n1 | cut -d " " -f6 | cut -d "." -f1-3 > network_address.txt
